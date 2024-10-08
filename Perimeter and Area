@@ -1,0 +1,41 @@
+#include<iostream>
+#include<cmath>
+int main(int argc, char** argv){
+  unsigned int choice;
+  double length,width,area,perimeter,raduis,a,b,c,pi=3.14;
+  std::cout<<"select the shape to calculate its area and parimeter: \n ";
+    std::cout<<"circle 1: \n ";
+    std::cout<<"rectangle 2: \n ";
+    std::cout<<"triangle 3: \n";
+    std::cout<<"enter your choice: ";
+    std::cin>>choice;
+    if (choice==1){
+      //circle
+      std::cout<<"enter the raduis of the circle:";
+      std::cin>>raduis;
+       area=pi*raduis*raduis;
+       perimeter=2*pi*raduis;
+      std::cout<<"area is:"<<area;
+      std::cout<<"  \n perimeter is "<<perimeter;
+    }
+    else if(choice==2)
+    {
+      std::cout<<"enter the lenght and width ";
+      std::cin>>length>>width;
+      area=length*width;
+      perimeter=(length+width)*2;
+      std::cout<<"area is:"<<area;
+      std::cout<<"perimeter is "<<area;
+    }
+    else if(choice==3)
+    {
+      std::cout<<"enter the base ,height and hypothenuse ";
+      std::cin>>a>>b>>c;
+      area=0.5*a*b;
+      perimeter=a+b+c;
+      std::cout<<"area is:"<<area;
+      std::cout<<"perimeter is "<<area;
+    }
+    
+  
+}
