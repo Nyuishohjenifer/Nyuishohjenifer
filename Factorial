@@ -1,0 +1,14 @@
+#include <iostream>
+
+int main(int argc,char**argv)
+{
+    int number,count,factorial=1;
+    std::cout<<"enter a number to find its factorial:";
+    std::cin>>number;
+    for(count=1;count<=number;count++){
+        factorial=factorial*count;
+    }
+    std::cout<<"factorial: "<<factorial;
+
+    return 0;
+}
