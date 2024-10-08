@@ -1,0 +1,19 @@
+#include <iostream>
+
+int main(int argc, char** argv) {
+  float x,y,z;
+  std::cout<<"enter the three sides of triangle";
+  std::cin>>x>>y>>z;
+  if(x==y&&y==z)
+  {std::cout<<"the triangle is equalateral";}
+  else if(x==y  y==z  x==z){
+    std::cout<<"the triangle is isosceles";} 
+  else
+  {
+  std::cout<<"the triangle is scalene";
+    
+   }
+  
+  
+  return 0;
+}
